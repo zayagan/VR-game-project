@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7760947779942900597}
   - component: {fileID: 4675747655311501910}
   - component: {fileID: 7975453888495715941}
-  - component: {fileID: 2113735858215611598}
+  - component: {fileID: -721049840257296470}
+  - component: {fileID: -703379197820930715}
   m_Layer: 8
   m_Name: WoodenBox
   m_TagString: Untagged
@@ -134,7 +135,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &2113735858215611598
+--- !u!114 &-721049840257296470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7368773931792479179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a9d489b9dd942d7817deb9a17bc94b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: -703379197820930715}
+  volume: 1
+  minSpeed: 1
+  fullSpeed: 5
+  minDelay: 0.02
+--- !u!82 &-703379197820930715
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +161,10 @@ AudioSource:
   m_GameObject: {fileID: 7368773931792479179}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1463875879153020631, guid: ee4ca10b787a8d74098b8b3fca4b873b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 3142f50ee19d744cbbede15d3d54f25b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -155,7 +174,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -190,7 +209,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
