@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1367,7 +1367,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -1375,18 +1375,18 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.3254717, g: 1, b: 0.625103, a: 1}
-        key1: {r: 0.95254177, g: 1, b: 0.32549024, a: 1}
-        key2: {r: 0.5943396, g: 0, b: 0.005759887, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+        key1: {r: 0.6603774, g: 0, b: 0, a: 1}
+        key2: {r: 0.95254177, g: 1, b: 0.32549024, a: 0}
+        key3: {r: 0.5943396, g: 0, b: 0.005759887, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 33153
-        ctime2: 65535
-        ctime3: 0
+        ctime1: 6554
+        ctime2: 33153
+        ctime3: 65535
         ctime4: 0
         ctime5: 0
         ctime6: 0
@@ -1401,7 +1401,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_ColorSpace: 0
-        m_NumColorKeys: 3
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
@@ -5037,6 +5037,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.020730019
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
       propertyPath: InitialModule.startRotationY.scalar
       value: 0
       objectReference: {fileID: 0}
@@ -5057,13 +5072,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime1
-      value: 47417
+      value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime2
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.ctime0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
@@ -5077,28 +5102,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.b
-      value: 0.32549024
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.g
-      value: 1
+      value: 0.43736503
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.r
-      value: 0.8498326
+      value: 0.32549024
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.b
-      value: 0.9669979
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.g
-      value: 1
+      value: 0.43736503
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
@@ -5143,7 +5178,7 @@ PrefabInstance:
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4537454835937425863, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
         type: 3}
@@ -5214,6 +5249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].outWeight
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711663280922825320, guid: 57458f659f161f34f8e9fdad9d5c0f0b,
+        type: 3}
+      propertyPath: m_Name
+      value: po dopadu plasmy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
